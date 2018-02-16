@@ -1,0 +1,15 @@
+version 0
+unaryWeight 100
+smoothWeight 0.001
+dimScales 0.1,0.02857,0.02857,0.136986,0.1176,0.1176,
+gridSizes -1,-1,-1,-1,-1,-1,
+dimWeights 0.5,0.5,0.5,1.3,1.5,1.5,
+interp 1
+gtFrames 0
+dtDataTerm 0
+smoothReg 0.00
+segThresh 64
+noTracksRadius 32
+noTracksSpacing 8
+noTracksCost 0.05
+
