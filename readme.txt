@@ -17,7 +17,7 @@ You'll need:
     CMake
     OpenCV
     Theia
-    
+
 
 This relies on some external libraries you'll need to download:
     1. Dense Point Tracking:
@@ -45,6 +45,14 @@ This relies on some external libraries you'll need to download:
         http://vision.csd.uwo.ca/code/
        and place the code in the bvs folder, i.e. you should have
         bvs/maxflow-v3.01/maxflow.cpp, etc.
+
+       Note: I use a custom instantiation of the Graph template from maxflow
+       that isn't included in instances.inc (thanks to Yucheng Lu for pointing
+       this out). To get the bvs code to build, you'll need to add the
+       following line to maxflow-v3.01/instances.inc:
+            template class Graph<float, float, double>;
+       though you could probably also get away with changing the typedef near
+       the top of BilateralSegment.cpp to Graph<float,float,float>
 
     4. Google Sparsehash
        https://github.com/sparsehash/sparsehash
