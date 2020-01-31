@@ -2,6 +2,8 @@ This is an implementation of
     Scott Wehrwein and Richard Szeliski
     Video Segmentation with Background Motion Models
     BMVC 2017
+    
+Project webpage: https://facultyweb.cs.wwu.edu/~wehrwes/vsbmm.html
 
 If you use this in your research, please cite our paper.
 
